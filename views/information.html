@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>善款信息查询页面</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/information.css">
+</head>
+
+<body class="bg-light" style="width: 478px;">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="/images/logo.png" width="30" height="30" alt="">
+            查询页面
+        </a>
+        <div class="navbar-nav" style="width: 136px;">
+            <a href="/home" class="nav-link">退出</a>
+        </div>
+
+        <!-- <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/home" id="navbarDropdown" data-toggle="dropdown">
+                    退出
+                </a>
+            </li>
+        </ul> -->
+    </nav>
+    <div class="col-10">
+                <div class="p-3 border mb-3 bg-white">
+                    <h4 class="mb-0">查询页面</h4>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white d-flex justify-content-between">
+                                <h6 class="mb-0 align-self-center">查询</h6>
+                            </div>
+                            <div class="card-body" style="height: 845px;">
+                                <!-- <form action="/article/add" method="POST" enctype="multipart/form-data">  -->
+                                    <div >
+                                        <div class="divider div-transparent div-dot"></div>
+                                        <div>查看募集者信息</div>                                                           
+                                        <span>请输入募集者ID号：</span>
+                                        <input type="text" id="figure" >
+                                        <button class="btn btn-success" onclick="lookmjz()">提交</button>
+                                        <br/>
+                                        <span>募集者的地址:</span>
+                                        <span class="look1" ></span>
+                                        <br/>
+                                        <span>目标金额:</span>
+                                        <span class="look2" ></span>
+                                        <br/>
+                                        <span>贫困情况:</span>
+                                        <span class="look3" ></span>
+                                        <br/>
+                                        <span>电话号码:</span>
+                                        <span class="look4" ></span>
+                                        <br/>
+                                        <span>已经凑集的金额:</span>
+                                        <span class="look5" ></span>
+                                        <br/>
+                                        <span>捐款者的数量:</span>
+                                        <span class="look6" ></span>
+                                        <!-- <br/>
+                                        <span>捐款者的数量:</span>
+                                        <span class="look7" ></span> -->
+                                    </div>
+                                    <div class="divider div-transparent div-dot"></div>
+                                    <div >
+                                        <div>查看捐款者信息</div>                                                           
+                                        <span>请输入捐款者的地址：</span>
+                                        <input type="text" id="funderaddress" >
+                                        <button class="btn btn-success" onclick="lookAddressjkz()">提交</button>
+                                        <br/>
+                                        <span>捐款金额:</span>
+                                        <span class="lookAddress1" ></span>
+                                        <br/>
+                                        <span>受益者地址:</span>
+                                        <span class="lookAddress2" ></span>
+                                        <br/>
+                                    </div>
+                                    <div class="divider div-transparent div-dot"></div>
+                                    <div >
+                                        <div>通过募集者ID获取 捐款者地址 和 捐款金额</div>                                                           
+                                        <span>请输入募集者ID号:</span>
+                                        <br/>
+                                        <input type="text" id="figure" >
+                                        <button class="btn btn-success" onclick="lookFigureid()">提交</button>
+                                        <br/>
+                                        <span>捐款者地址:</span>
+                                        <span class="lookFigure1" ></span>
+                                        <br/>
+                                        <span>捐款金额：</span>
+                                        <span class="lookFigure2" ></span>
+                                        <br/>
+                                    </div>
+                                <!-- </form> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="toasts position-absolute" style="min-width:300px;right:0;top:80px"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.min.js"></script>
+    <script src="/javascripts/js/jquery.js"></script>
+    <script src="/javascripts/js/web3.min.js"></script>
+    <script src="/javascripts/js/contract.js"></script>
+</body>
+
+</html>

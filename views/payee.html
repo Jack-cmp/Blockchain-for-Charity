@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>申请受款页面</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="/stylesheets/payee.css">
+    <link rel='stylesheetprefetch' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/stylesheets/information.css">
+
+</head>
+
+<body class="bg-light" style="width: 478px;"> 
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="/images/logo.png" width="30" height="30" alt="">
+            申请受款页面
+        </a>
+        <div class="navbar-nav" style="width: 136px;">
+            <a href="/home" class="nav-link">退出</a>
+        </div>
+    </nav>
+    
+    <div class="col-10">
+                <div class="p-3 border mb-3 bg-white">
+                    <h4 class="mb-0">申请受款</h4>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white d-flex justify-content-between">
+                                <h6 class="mb-0 align-self-center">提供受款证明</h6>
+                            </div>
+                            <div class="card-body" style="height: 978px;">
+                                <!-- <form action="/article/add" method="POST" enctype="multipart/form-data"> -->
+                                    <div class="container">
+                                        <div class="divider div-transparent div-dot"></div>
+                                        <span>请输入你的地址：</span>
+                                        <br>
+                                        <input type="text" id="Neederaddress" placeholder="用户地址">
+                                        <div class="divider div-transparent div-dot"></div>
+                                       
+                                        <span>请输入你想受款的金额：</span>
+                                        <input type="text" id="goal" placeholder="金额Wei" >
+                                        <div class="divider div-transparent div-dot"></div>
+                                        
+                                        <span>请说明你的情况：</span>
+                                        
+                                        <textarea id="fact" cols="30" rows="10" placeholder="申请说明" ></textarea>
+                                        <div class="divider div-transparent div-dot"></div>
+                                       
+                                        <span>请输入你的电话号码：</span>
+                                        <input type="text" id="phone"  placeholder="电话号码">
+                                        <div class="divider div-transparent div-dot"></div>
+                                       
+                                        <!-- <span>请输入你的受款编号：</span>
+                                        <input type="text" id="number">
+                                        <div class="divider div-transparent div-dot"></div> -->
+                                        
+                                        <br/>
+                                        <button href="/submitSuccess" class="btn btn-success" id="NewNeeder" >提交</button>
+                                        <!-- <a href="/submitSuccess" type="submit" id="NewNeeder" class="btn btn-success">提交</a>   -->
+                                        <a href="/home" class="btn btn-danger ml-3">取消</a>
+                                    </div>
+                                <!-- </form> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="toasts position-absolute" style="min-width:300px;right:0;top:80px"></div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/lib/antv/g2/3.5.12/dist/g2.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.data-set-0.10.2/dist/data-set.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/17.0.0/classic/ckeditor.js"></script>
+
+    <script src="/javascripts/js/jquery.js"></script>
+    <script src="/javascripts/js/web3.min.js"></script>
+    <script src="/javascripts/js/contract.js"></script>
+
+    <!-- <script src="/javascripts/js/payee.js"></script> -->
+
+
+ 
+</body>
+
+</html>

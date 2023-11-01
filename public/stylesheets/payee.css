@@ -1,0 +1,15 @@
+.container{
+    margin:auto;
+    text-align:center;
+    margin-top:100px;
+    }
+input{
+    padding:5px 10px;
+    border-radius:5px;
+    }
+input:focus{
+    outline:none;
+    border-color:#4caf50;
+    box-shadow:005pxrgba(108,231,7,0.4);
+    border-radius:5px;
+    }

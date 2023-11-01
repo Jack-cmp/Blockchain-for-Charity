@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人信息</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="stylesheets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/css/style.css">
+
+	<script type="text/javascript" src="/javascripts/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/js/jquery.js"></script>
+    <script src="/javascripts/js/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+	<img src="images/11.jpg" class="wdbj">
+
+		<div class="wode">
+				<ul class="wodetop">
+					<!-- <% for(let o of data){%> -->
+						<li>
+							<a href="/tx"><img src="/upload_img/<%=img1.img %>" class="wtx" alt=""></a>
+						</li>
+						<!-- <% } %> -->
+					<li style="margin-right: 0px; width: 60%;">
+						<span style="margin-top: 1rem;">区块</span>
+						<span>医疗之声</span>
+					</li>
+					<li>
+						<a href="/home" class="glyphicon wda">返回</a>
+					</li>
+					<li class="clear"></li>
+				</ul>
+		</div>
+
+		<div class="yhlb">
+
+			<ul>
+				<!-- <% for(let o of data){%> -->
+				<li class="bai">
+					<a href="">
+						<span class="glyphicon glyphicon-screenshot"></span>
+						<span>地址:<%=data[0].name %></span>
+						<span class="glyphicon glyphicon-menu-right yhdj"></span>
+					</a>
+				</li>
+				<li class="bai mb">
+					<a href="">
+						<span class="glyphicon glyphicon-user"></span>
+						<span>性别:<%=data[0].sexo %></span>
+					</a>
+				</li>
+				<li class="bai">
+					<a href="">
+						<span class="glyphicon glyphicon-user"></span>
+						<span>电话:<%=data[0].ph %></span>
+					</a>
+				</li>
+				<li class="bai">
+					<a href="">
+						<span class="glyphicon glyphicon-heart"></span>
+						<span>密码:<%=data[0].password %></span>
+						<span class="glyphicon glyphicon-menu-right yhdj"></span>
+					</a>
+				</li>
+				<li class="bai mb">
+					<a href="">
+						<span class="glyphicon glyphicon-star"></span>
+						<span>余额:<span class="showAccount"></span></span>
+						<span class="glyphicon glyphicon-menu-right yhdj"></span>
+					</a>
+				</li>
+				<!-- <% } %> -->
+				<img src="images/11.jpg" class="wdbj">
+			</ul>
+		</div>
+	
+
+		<script src="/javascripts/js/jquery.js"></script>
+		<script src="/javascripts/js/web3.min.js"></script>
+		<script src="/javascripts/js/contract.js"></script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+body{
+			background: #F6F6F6;
+		}
+		header{
+			height: 5rem;
+			width: 100%;
+			background: #fff;
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			z-index: 100;
+		}
+		header p{
+			line-height: 4.5rem;
+			color:#999;
+			font-size: 2rem;
+		}
+		header ul{
+			margin-top: 1rem;
+			padding-left:4rem;
+			height: 4.5rem;
+			width: 100%;
+			list-style-type:none;
+			margin:0 auto;
+		}
+		header li{
+			width: 30%;
+			text-align: center;
+			float: left;
+			margin:0 auto;
+		}
+		.bor{border-bottom:0.5rem solid #999;}
+		footer{
+			height: 5rem;
+			width: 100%;
+			background: #fff;
+			position: fixed;
+			bottom: 0px;
+			left: 0px;
+		}
+		footer ul{
+			padding-left:1rem;
+			padding-right: 1rem;
+			height: 5rem;
+			width: 100%;
+			list-style-type:none;
+			margin:0 auto;
+		}
+		footer li{
+			padding-top:0.3rem;
+			width: 20%;
+			text-align: center;
+			float: left;
+		}
+		footer li .xt{
+			height: 50%;
+			font-size: 1.8rem;
+			margin-bottom: 0.3rem;
+		}
+		footer li span{
+			height: 50%;
+		}
+		.tou{
+			display: none;
+		}
+		.faa{
+			color:#999;
+		}
+		.clear{
+			clear:both; 
+		}
+		.nr{
+			height: 23rem;
+			width: 100%;
+		}
+		.jia{
+			width: 6rem;
+			height: 6rem;
+			border-radius: 50%;
+			margin-top: -2.2rem;
+			background: #fff;
+		}
+		.jia img{
+			width: 4rem;
+			height: 4rem;
+			margin-top: 0.9rem;
+			transition: all 1.1s;
+		}
+		.content{
+			margin-top: 5.4rem;
+			margin-bottom: 5.4rem;
+		}
+		.content .hp{
+			height: 3rem;
+		}
+		.content .tx{
+			width: 4rem;
+			height: 4rem;
+			border-radius: 50%;
+		}
+		.content span{
+			font-size: 0.7rem;
+		}
+		.content ul{
+			list-style-type:none;
+			padding: 0px;
+			height: 3rem;
+		}
+		.content li{
+			float: left;
+			margin-right: 1rem;
+			overflow: hidden;
+		}
+		.content .pb{
+			height: 30rem;
+		}
+		.content .pv{
+			height: 18rem;
+			position:relative;
+		}
+		.pv .vnr{
+			height: 15rem;
+			width: 100%;
+		}
+		.pv p{
+			line-height: 2rem;
+			height: 2rem;
+			margin-top: 1rem;
+			margin-bottom: 0px;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 3;
+			overflow: hidden;
+		}
+		.pv span{
+			color: #fff;
+			font-size: 5rem;
+			border-radius: 50%;
+			position: absolute;
+			top: 5.8rem;
+			left: 50%;
+			margin-left: -2.2rem;
+		}
+		.pb .pt{
+			height: 6rem;
+			font-size: 1.4rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.content .pf{
+			height: 4rem;
+		}
+		.tabc{
+			margin-top: 5.4rem;
+			margin-bottom: 5.4rem;
+		}
+		.tabc .sq{
+			height: 8rem;
+		}
+		.sq ul{
+			list-style-type:none;
+			padding: 0px;
+			height: 8rem;
+			margin-bottom: 0px;
+		}
+		.sq li{
+			float: left;
+			margin-right: 1rem;
+			overflow: hidden;
+		}
+		.sq .stx{
+			width: 8rem;
+			height: 8rem;
+			border-radius: 50%;
+		}
+		.sq p{
+			font-size: 2rem;
+			margin-bottom: 0px;
+			margin-top: 1rem;
+		}
+		.sq span{
+			display: block;
+			height: 2rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+		.pf ul{
+			list-style-type:none;
+			padding: 0px;
+			height: 4rem;
+			margin-bottom: 0px;
+		}
+		.pf ul li{
+			margin-right: 0px;
+			width: 33.33%;
+			float: left;
+			text-align: center;
+			line-height: 4rem;
+			overflow: hidden;
+		}
+		.pf span{
+			font-size: 1.5rem;
+			vertical-align: middle;
+		}
+		.pv .vms{
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.ph li span{
+			display: block;
+			height: 4rem;
+			line-height: 4rem;
+			font-size: 1.5rem;
+		}
+		.ph{
+			height: 4rem;
+			margin-bottom: 1rem;
+		}
+		.fb{
+			height: 15rem;
+			width: 100%;
+			background: #fff;
+			position: fixed;
+			left: 0px;
+			bottom: 5rem;
+			display: none;
+		}
+		.fb ul{
+			height: 6rem;
+			width: 100%;
+			list-style-type:none;
+			margin:6rem auto;
+			padding: 0px;
+		}
+		.fb li{
+			width: 33.33%;
+			text-align: center;
+			float: left;
+			font-size: 1.5rem;
+			color: #999;
+		}
+		.fb .fwz{
+			font-size: 3rem;
+			color: #999;
+		}
+		.fb i{
+			font-size: 2rem;
+			float: right;
+			margin-right: 1rem;
+		}
+		.fb a{
+			color: #999;
+		}
+		a:hover{
+			text-decoration: none;
+			color: #000;
+		}
+		.fb,footer a:hover{
+			text-decoration: none;
+			color: #999;
+		}
+		.ti{
+			height: 5rem;
+			line-height: 5rem;
+			text-align: center;
+		}
+		.ti span{
+			vertical-align: middle;
+			font-size: 2rem;
+			color: #999; 
+		}
+		.tabb .xx{
+			height: 6rem;
+		}
+		.xx ul{
+			list-style-type:none;
+			padding: 0px;
+			height: 6rem;
+			margin-bottom: 0px;
+		}
+		.xx li{
+			float: left;
+			margin-right: 1rem;
+			overflow: hidden;
+		}
+		.xx .xtx{
+			width: 6rem;
+			height: 6rem;
+			border-radius: 50%;
+		}
+		.xx span{
+			display: block;
+			height: 2.5rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			font-size: 1.5rem;
+		}
+		.wdbj{
+			height: 20rem;
+			width: 100%;
+		}
+		.wode{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			height: 20rem;
+			width: 100%;
+			background: rgba(0,0,0,0.5);
+		}
+		.wode .wodetop{
+			list-style-type:none;
+			padding: 0px;
+			height: 15rem;
+			margin-left: 2rem;
+			margin-bottom: 0px;
+		}
+		.wode .wodetop li{
+			float: left;
+			margin-top: 4rem;
+			margin-right: 1rem;
+			overflow: hidden;
+		}
+		.wode .wtx{
+			width: 7rem;
+			height: 7rem;
+			border-radius: 50%;
+			border:0.2rem solid #fff;
+		}
+		.wode .wodetop span{
+			color: #fff;
+			display: block;
+			height: 3rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			font-size: 1.6rem;
+		}
+		.wode .wda{
+			line-height: 7rem;
+			color: #fff;
+		}
+		.wode .wodebt{
+			list-style-type:none;
+			padding: 0px;
+			height: 5rem;
+			margin-bottom: 0px;
+			background: rgba(0,0,0,0.6);
+		}
+		.wode .wodebt li{
+			height: 5rem;
+			width: 33.33%;
+			float: left;
+			overflow: hidden;
+		}
+		.wode .wodebt span{
+			color: #999;
+			text-align: center;
+		}
+		.wode .wbt{
+			margin-top: 0.8rem;
+		}
+		.yhlb{
+			height: 40rem;
+		}
+		.yhlb ul{
+			list-style-type:none;
+			padding: 0px;
+			height: 40rem;
+			margin-bottom: 0px;
+		}
+		.yhlb li{
+			height: 5rem;
+			line-height: 5rem;
+		}
+		.yhlb span{
+			font-size: 1.2rem;
+			vertical-align: middle;
+			color: #999;
+			margin-left: 2rem;
+		}
+		.yhlb a{
+			font-size: 2rem;
+			color:#999;
+		}
+		.bai{
+			background: #fff;
+		}
+		.mb{
+			margin-bottom: 1rem;
+		}
+		.yhdj{
+			line-height: 5rem;
+			float: right;
+			margin-right: 2rem;
+			font-size: 1rem;
+		}
+		.nry{
+			height: 5rem;
+			background: #999;
+			line-height: 5rem;
+			font-size: 1.5rem;
+		}
+		.nry span{
+			vertical-align: middle;
+			color: #fff;
+		}
+		.nrl{
+			margin-left: 2rem;
+		}
+		.nrc{
+			position: absolute;
+			left: 50%;
+			top:0px;
+			margin-left: -1.25rem;
+		}

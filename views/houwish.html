@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>查询善款信息</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="/stylesheets/home/css/bootstrap.min.css"> -->
+
+<title>慈善＋区块链项目</title>
+<link rel="stylesheet" href="/stylesheets/home/css/bootstrap.min.css">
+<link rel="stylesheet" href="/stylesheets/home/css/font-awesome.min.css">
+<link rel="stylesheet" href="/stylesheets/home/css/jquery.simpleTicker.css">
+<link rel="stylesheet" href="/stylesheets/home/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/stylesheets/home/css/owl.theme.default.css">
+<link rel="stylesheet" href="/stylesheets/home/css/animate.css">
+<link rel="stylesheet" href="/stylesheets/home/css/prettyPhoto.css">
+<link rel="stylesheet" href="/stylesheets/home/style.css">
+<link rel="stylesheet" href="/stylesheets/home/css/responsive.css">
+</head>
+
+<body class="bg-light" style="width: 478px;">
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<a class="navbar-brand" href="#" style="height:86px;width: 322px;">
+				<img src="/images/logo.png" width="30" height="30" alt="">
+				材料审批界面
+			</a>
+			<div class="navbar-nav" style="width: 136px;">
+				<a href="/houHome" class="nav-link" style="font-size: 19px;">退出</a>
+			</div>
+		</nav>
+
+<section class="gr-about-area" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="sectino-intro">
+					<h2 class="section-heading gr-heading">心愿单</h2>
+					<p>募集者信息</p>
+				</div>
+			</div>
+
+            <% for(let o of data){%>
+			<div class="col-md-12">
+				<div class="about-wrap">
+					<ul>
+
+						<li class="ab-single clearfix">
+							<div class="col-md-6 col-sm-6">
+								<img src="/upload_img/<%=o.picture %>" alt="">
+							</div>
+							<div class="col-md-6 col-sm-6">
+
+								<div class="ab-content">
+                                    <h4>用户地址：<br/><%=o.Neederaddress %></h4>
+                                    <p>募集金额Wei:<%=o.goal %></p>
+                                    <p>贫困情况：<%=o.fact %></p>
+                                    <p>电话号码：<%=o.phone %></p>
+                                    <p>募集编号：<%=o.number %></p>
+                                    <input type="submit" class="del btn btn-danger ml-3" onclick="del('<%= o.id%>')" value="删除" style="width:70px">
+                                </div>
+                                
+							</div>
+						</li>
+					</ul>
+				</div>
+            </div>
+            <% } %>
+		</div>
+	</div>
+<script src="/stylesheets/home/js/jquery.min.js"></script>
+<script src="/stylesheets/home/js/bootstrap.min.js"></script>
+<script src="/stylesheets/home/js/owl.carousel.min.js"></script>
+<script src="/stylesheets/home/js/app.js"></script>
+<script src="/stylesheets/home/js/isotope.pkgd.min.js.js"></script>
+<script src="/stylesheets/home/js/jquery.easing.1.3.js"></script>
+<script src="/stylesheets/home/js/jquery.waypoints.min.js"></script>
+<script src="/stylesheets/home/js/jquery.counterup.min.js"></script>
+<script src="/stylesheets/home/js/jquery.prettyPhoto.js"></script>
+<script src="/stylesheets/home/js/jquery.simpleTicker.js"></script>
+<script src="/stylesheets/home/js/jquery.sticky.js"></script>
+<script src="/stylesheets/home/js/wow.js"></script>
+<script src="/stylesheets/home/js/main.js"></script>
+<script>
+   function del(id){
+       window.location.href = '/houwish/del/'+id
+   }
+</script>
+</body>
+
+</html>
